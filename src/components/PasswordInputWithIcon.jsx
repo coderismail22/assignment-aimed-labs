@@ -1,3 +1,5 @@
+// Font Awesome Added
+
 import React, { useState, forwardRef } from "react";
 import styled from "styled-components";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -39,6 +41,8 @@ const PasswordInputWithIcon = forwardRef(({ type, value, onChange }, ref) => {
         value={value}
         onChange={onChange}
         ref={ref}
+        placeholder="Enter Password"
+
       />
       <EyeIcon onClick={handleTogglePassword}>
         <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} size="lg" />

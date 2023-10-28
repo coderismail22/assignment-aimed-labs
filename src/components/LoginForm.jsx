@@ -5,8 +5,8 @@ import Swal from "sweetalert2";
 import PasswordInputWithIcon from "./PasswordInputWithIcon";
 
 const FormWrapper = styled.div`
-  max-width: 450px;
-  /* margin: 0 auto; */
+  max-width: 700px;
+  margin: 0 auto;
   padding: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -16,6 +16,7 @@ const FormWrapper = styled.div`
 const Register =  styled.p`
 font-weight: bold;
 font-size: 12px;
+text-align: center;
 `;
 
 const LoginText = styled.h1`
@@ -60,21 +61,23 @@ const Underline = styled.span`
 `;
 
 const SubmitButton = styled.button`
-display: block;
-margin: 0 auto;
+  display: block;
+  margin: 0 auto;
   background-color: #1c7cca;
   color: white;
-  padding: 10px 130px;
+  padding: 10px 100px; /* Adjust padding to control the button's size */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
+  max-width: 100%; /* Set maximum width to prevent overflowing */
 
   &:hover {
     background-color: #1c4e99;
   }
 `;
+
 
 const LoginForm = () => {
   const {
@@ -128,7 +131,7 @@ const LoginForm = () => {
                 message: "Invalid email address",
               },
             }}
-            render={({ field }) => <Input {...field} />}
+            render={({ field }) => <Input {...field} placeholder="Enter Login ID"/>}
           />
           <ErrorMessage>{errors.email && errors.email.message}</ErrorMessage>
         </FormGroup>
@@ -145,14 +148,16 @@ const LoginForm = () => {
                 message: "Password must have at least 6 characters",
               },
             }}
-            render={({ field }) => (
+            render={({ field }) => 
               <PasswordInputWithIcon
                 onClick={() => {
                   field.onChange(); // This will trigger re-render and update the type
+
                 }}
                 {...field}
+
               />
-            )}
+            }
           />
           <ErrorMessage>
             {errors.password && errors.password.message}
@@ -175,11 +180,11 @@ const LoginForm = () => {
           />
 
           <label htmlFor="termsCheckbox">
-            Agree to the <Underline>Terms and Conditions</Underline>
+            Agree to the <Underline as='a'>Terms and Conditions</Underline>
           </label>
         </StyledCheckboxLabel>
         <SubmitButton type="submit">Submit</SubmitButton>
-        <Register>Don't Have An Account ? <Underline>Register Here.</Underline></Register>
+        <Register>Don't Have An Account ? <Underline as='a'>Register Here.</Underline></Register>
       </form>
     </FormWrapper>
   );
