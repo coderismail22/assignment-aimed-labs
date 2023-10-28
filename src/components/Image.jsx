@@ -1,3 +1,4 @@
+// SVG Image Added
 const Image = () => {
     return ( 
         <div>
