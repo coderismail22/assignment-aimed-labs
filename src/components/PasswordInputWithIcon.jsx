@@ -1,5 +1,4 @@
 // Font Awesome Added
-
 import React, { useState, forwardRef } from "react";
 import styled from "styled-components";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
@@ -27,6 +26,7 @@ const EyeIcon = styled.div`
   cursor: pointer;
 `;
 
+// Conditional Icon Rendering 
 const PasswordInputWithIcon = forwardRef(({ type, value, onChange }, ref) => {
   const [showPassword, setShowPassword] = useState(false);
 
