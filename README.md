@@ -1,8 +1,26 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Aimed Labs Assignment
 
-Currently, two official plugins are available:
+This is a appealing login page with various functionality and responsiveness. 
+![Screenshot (18)](https://github.com/coderismail22/assignment-aimed-labs/assets/122710226/50854385-1bf7-433f-baca-8edec6ada39c)
+![Screenshot (19)](https://github.com/coderismail22/assignment-aimed-labs/assets/122710226/add25025-b5cb-4dec-95c3-83234078258a)
+![Screenshot (21)](https://github.com/coderismail22/assignment-aimed-labs/assets/122710226/64c100ff-0a56-4f8a-8f13-d3d3aef36013)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Tools 🔨
+- React
+- Styled Components Library
+- React Hook Form
+- Sweet Alert
+- Font Awesome
+- Undraw (SVG Images)
+
+## Features 🔥
+- Form Validation
+- Sweet Functional Alerts
+- High Quality Appealing Icons
+- Mobile, Tablet and Desktop Responsive
+- Appealing UI
+- 
+## 🚀 About Me
+I am a enthusiastic MERN stack web developer. I eagerly look for forward to getting your response. Thank you.
