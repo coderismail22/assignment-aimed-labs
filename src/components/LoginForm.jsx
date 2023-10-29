@@ -96,7 +96,7 @@ const LoginForm = () => {
   const onSubmit = (data) => {
     // Check if both checkboxes are selected
     if (data.termsAndConditions) {
-      // Alert after successful submission
+      // Alert after successful submission (SweetAlert)
       Swal.fire({
         position: "center-center",
         icon: "success",
@@ -105,7 +105,7 @@ const LoginForm = () => {
         timer: 1500,
       });
     } else {
-      // Display error message if checkboxes are not selected
+      // Display error message if checkboxes are not selected (SweetAlert)
       Swal.fire({
         icon: "error",
         title: "Oops...",
