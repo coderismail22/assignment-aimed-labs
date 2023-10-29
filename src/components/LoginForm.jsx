@@ -6,8 +6,9 @@ import PasswordInputWithIcon from "./PasswordInputWithIcon";
 
 const FormWrapper = styled.div`
   max-width: 700px;
-  margin: 0 auto;
-  padding: 50px;
+  /* margin: 0 auto; */
+  overflow: scroll;
+  padding: 40px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -64,14 +65,19 @@ const SubmitButton = styled.button`
   display: block;
   margin: 0 auto;
   background-color: #1c7cca;
+  text-align: center;
   color: white;
-  padding: 10px 100px; /* Adjust padding to control the button's size */
+  padding: 8px 80px; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s;
-  max-width: 100%; /* Set maximum width to prevent overflowing */
+  max-width: 100%; 
+  min-width: 140px;
+  @media screen and (max-width:300px) {
+    padding: 8px 50px;
+  }
 
   &:hover {
     background-color: #1c4e99;

@@ -6,10 +6,11 @@ import Image from "./components/Image";
 const Wrapper = styled.div`
   font-family: "poppins", "times new roman", "arial";
   display: flex;
-  margin: 0 20px;
+  margin: 0 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -17,6 +18,7 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     height: 100vh;
+    font-size: 18px;
   }
 `;
 
